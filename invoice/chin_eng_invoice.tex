@@ -1,0 +1,73 @@
+\documentclass[UTF8]{ctexrep}
+\usepackage[a4paper, margin=1.5cm]{geometry}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{array}
+
+% 定義藍色條顏色
+\definecolor{headerblue}{RGB}{102, 204, 255}
+
+% 設定表格行高
+\renewcommand{\arraystretch}{1.8}
+
+\begin{document}
+\pagestyle{empty}
+
+% 頂部藍色條
+%\noindent\colorbox{headerblue}{\vbox to 0.5cm{\vfill\hbox to \textwidth{}\vfill}}
+
+\vspace{0.5cm}
+
+% 置中公司資訊
+\begin{center}
+    {\huge \textbf{李光記五金行}} \\
+    {\large \textbf{LI KWONG KEE METAL CO.}} \\[0.2cm]
+    香港灣仔大王東街八號地下 \\
+    G/F, 8 Tai Wong Street E, Wanchai, Hong Kong \\[0.1cm]
+    電話Tel: 28612378 \quad 傳真Fax: 2861 3378
+\end{center}
+
+% 發票編號
+\hfill {\color{red} \Large \textbf{№ 00001}}
+
+\vspace{-0.5cm}
+
+% 標題
+\begin{center}
+    {\LARGE \textbf{發 INVOICE 票}}
+\end{center}
+
+% 客戶與日期
+\noindent \textbf{M:} \underline{\hspace{8cm}} \hfill \textbf{Date:} \underline{\hspace{5cm}}
+
+\vspace{0.5cm}
+
+% 主表格
+\noindent
+\begin{tabularx}{\textwidth}{|X|p{2.5cm}|p{2.5cm}|p{2.5cm}|}
+    \hline
+    \centering \textbf{貨 名} & \centering \textbf{數 量} & \centering \textbf{單 價} & \centering \textbf{金 額} \tabularnewline
+    \centering \textbf{Description} & \centering \textbf{Quantity} & \centering \textbf{Unit Price} & \centering \textbf{Amount} \tabularnewline \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    & & & \\ \hline
+    % 關鍵修正部分：使用 multicolumn{2}{c|} 移除前兩欄的左側及中間垂直線
+    \multicolumn{2}{c|}{} & \textbf{合 計 Total:} & \\ \cline{3-4}
+    \multicolumn{2}{c|}{} & \textbf{定 金 Deposit:} & \\ \cline{3-4}
+    \multicolumn{2}{c|}{} & \textbf{總 數 Balance:} & \\ \cline{3-4}
+\end{tabularx}
+
+\vspace{1cm}
+
+% 簽署欄位
+\noindent \textbf{經手人:} \\
+\textbf{Received by} \underline{\hspace{6cm}}
+
+\end{document}
