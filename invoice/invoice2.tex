@@ -8,6 +8,11 @@
 \usepackage{array}
 \usepackage{fontspec}
 
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
 % --- Crop marks (A5 centered on A4) ---
 \usepackage[cam,center,a4]{crop}
 
@@ -35,7 +40,7 @@ G/F, 8 Tai Wong Street E, Wanchai, Hong Kong} \\[3pt]
 {\footnotesize 電話 Tel: 28612378 \quad 傳真 Fax: 2861 3378}
 \end{center}
 
-\hfill {\color{red}\normalsize \textbf{№ 00001}}
+% \hfill {\color{red}\normalsize \textbf{№ 00001}}
 
 \vspace{-0.4cm}
 
@@ -43,17 +48,19 @@ G/F, 8 Tai Wong Street E, Wanchai, Hong Kong} \\[3pt]
 {\large \textbf{發 INVOICE 票}}
 \end{center}
 
-\noindent
-\textbf{M:} \underline{\hspace{4.5cm}}
-\hfill
-\textbf{Date:} \underline{\hspace{3cm}}
+\begin{center}
+\begin{tabular*}{0.86\linewidth}{@{\extracolsep{\fill}}lr}
+\textbf{M:} \underline{\hspace{4.5cm}} &
+\textbf{Date:} \underline{\hspace{3cm}} \\
+\end{tabular*}
+\end{center}
 
 \vspace{0.3cm}
 
 % --- Main Table ---
 \noindent
 \begin{center}
-\begin{tabularx}{0.86\linewidth}{|p{4.5cm}|p{1.35cm}|p{1.6cm}|p{1.6cm}|}
+\begin{tabularx}{0.86\linewidth}{|p{4.4cm}|p{1.35cm}|p{1.6cm}|p{1.71cm}|}
 \hline
 \centering \textbf{貨 名} &
 \centering \textbf{數 量} &
@@ -75,16 +82,16 @@ G/F, 8 Tai Wong Street E, Wanchai, Hong Kong} \\[3pt]
 & & &\\ \hline
 & & &\\ \hline
 
-\multicolumn{2}{c|}{} &
+\multicolumn{2}{l|}{} &
 \textbf{\footnotesize 合計 Total:} &
 \\ \cline{3-4}
 
-\multicolumn{2}{c|}{} &
-\textbf{\footnotesize 定金 \break Deposit:} &
+\multicolumn{2}{l|}{} &
+\textbf{\footnotesize 定金 Deposit:} &
 \\ \cline{3-4}
 
-\multicolumn{2}{c|}{} &
-\textbf{\footnotesize 總數 \break Balance:} &
+\multicolumn{2}{l|}{} &
+\textbf{\footnotesize 總數 Balance:} &
 \\ \cline{3-4}
 
 \end{tabularx}
@@ -93,8 +100,12 @@ G/F, 8 Tai Wong Street E, Wanchai, Hong Kong} \\[3pt]
 \vspace{0.5cm}
 
 \noindent
+\begin{center}
+\begin{tabular*}{0.86\linewidth}{l}
 \textbf{經手人:} \\[4pt]
-\textbf{Received by} \underline{\hspace{4cm}}
+\textbf{Received by} \underline{\hspace{4cm}} \\
+\end{tabular*}
+\end{center}
 
 \end{minipage}
 \end{center}
