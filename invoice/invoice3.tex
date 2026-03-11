@@ -1,0 +1,97 @@
+\documentclass[UTF8, fontset=none]{ctexrep}
+
+% --- Page size (actual document is A5) ---
+\usepackage[a5paper, margin=1cm, top=3.5cm, bottom=0.5cm]{geometry}
+
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{fontspec}
+
+\tolerance=1
+\emergencystretch=\maxdimen
+\hyphenpenalty=10000
+\hbadness=10000
+
+% --- Crop marks (A5 centered on A4) ---
+\usepackage[cam,center,a4]{crop}
+
+% --- Fonts ---
+\setCJKmainfont{GenRyuMin TW}
+
+% --- Styles ---
+\definecolor{headerblue}{RGB}{102,204,255}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{document}
+\pagestyle{empty}
+
+\vfill
+\begin{center}
+\begin{minipage}{0.85\paperwidth}
+
+\vspace{0.2cm}
+
+\begin{center}
+{\Large \textbf{山光文具家品}} \\[2pt]
+{\footnotesize 香港灣仔軒尼詩道225號駱克道街市一樓DL5號舖} \\[3pt]
+{\footnotesize 電話: 25881228}
+\end{center}
+
+\vspace{0.2cm}
+
+\begin{center}
+{\large \textbf{發票}}
+\end{center}
+
+\begin{center}
+\begin{tabular*}{0.86\linewidth}{@{\extracolsep{\fill}}lr}
+\textbf{M:} \underline{\hspace{4.5cm}} &
+\textbf{日期:} \underline{\hspace{3cm}} \\
+\end{tabular*}
+\end{center}
+
+\vspace{0.3cm}
+
+% --- Main Table ---
+\noindent
+\begin{center}
+\begin{tabularx}{0.86\linewidth}{|p{4.4cm}|p{1.35cm}|p{1.6cm}|p{1.71cm}|}
+\hline
+\centering \textbf{貨 名} &
+\centering \textbf{數 量} &
+\centering \textbf{單 價} &
+\centering \textbf{金 額} \tabularnewline
+\hline
+
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+
+\multicolumn{2}{r}{} &
+\hfill \textbf{\footnotesize 合計:} &
+\\ \cline{4-4}
+
+\multicolumn{2}{r}{} &
+\hfill \textbf{\footnotesize 定金:} &
+\\ \cline{4-4}
+
+\multicolumn{2}{r}{} &
+\hfill \textbf{\footnotesize 總數:} &
+\\ \cline{4-4}
+
+\end{tabularx}
+\end{center}
+
+\vspace{0.5cm}
+
+\end{minipage}
+\end{center}
+\vfill
+
+\end{document}
