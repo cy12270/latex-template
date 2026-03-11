@@ -1,0 +1,103 @@
+\documentclass[UTF8, fontset=none]{ctexrep}
+
+% --- Page size (actual document is A5) ---
+\usepackage[a5paper, margin=1cm, top=0.5cm, bottom=0.5cm]{geometry}
+
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{array}
+\usepackage{fontspec}
+
+% --- Crop marks (A5 centered on A4) ---
+\usepackage[cam,center,a4]{crop}
+
+% --- Fonts ---
+\setCJKmainfont{GenRyuMin TW}
+
+% --- Styles ---
+\definecolor{headerblue}{RGB}{102,204,255}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{document}
+\pagestyle{empty}
+
+\vfill
+\begin{center}
+\begin{minipage}{0.85\paperwidth}
+
+\vspace{0.2cm}
+
+\begin{center}
+{\Large \textbf{李光記五金行}} \\[2pt]
+{\small \textbf{LI KWONG KEE METAL CO.}} \\[3pt]
+{\footnotesize 香港灣仔大王東街八號地下 \\
+G/F, 8 Tai Wong Street E, Wanchai, Hong Kong} \\[3pt]
+{\footnotesize 電話 Tel: 28612378 \quad 傳真 Fax: 2861 3378}
+\end{center}
+
+\hfill {\color{red}\normalsize \textbf{№ 00001}}
+
+\vspace{-0.4cm}
+
+\begin{center}
+{\large \textbf{發 INVOICE 票}}
+\end{center}
+
+\noindent
+\textbf{M:} \underline{\hspace{4.5cm}}
+\hfill
+\textbf{Date:} \underline{\hspace{3cm}}
+
+\vspace{0.3cm}
+
+% --- Main Table ---
+\noindent
+\begin{center}
+\begin{tabularx}{0.86\linewidth}{|p{4.5cm}|p{1.35cm}|p{1.6cm}|p{1.6cm}|}
+\hline
+\centering \textbf{貨 名} &
+\centering \textbf{數 量} &
+\centering \textbf{單 價} &
+\centering \textbf{金 額} \tabularnewline
+
+\centering \textbf{Description} &
+\centering \textbf{Qty} &
+\centering \textbf{Price} &
+\centering \textbf{Amount} \tabularnewline
+\hline
+
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+& & &\\ \hline
+
+\multicolumn{2}{c|}{} &
+\textbf{\footnotesize 合計 Total:} &
+\\ \cline{3-4}
+
+\multicolumn{2}{c|}{} &
+\textbf{\footnotesize 定金 \break Deposit:} &
+\\ \cline{3-4}
+
+\multicolumn{2}{c|}{} &
+\textbf{\footnotesize 總數 \break Balance:} &
+\\ \cline{3-4}
+
+\end{tabularx}
+\end{center}
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{經手人:} \\[4pt]
+\textbf{Received by} \underline{\hspace{4cm}}
+
+\end{minipage}
+\end{center}
+\vfill
+
+\end{document}
